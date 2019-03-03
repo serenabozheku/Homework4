@@ -2,9 +2,9 @@
 
 from flask import Flask, jsonify, render_template
 from ext import db
-from modules.modules import StudentsModel
-from modules.modules import CoursesModel
-from modules.modules import EventsModel
+from modules.models import StudentsModel
+from modules.models import CoursesModel
+from modules.models import EventsModel
 import json
 from flask import request
 app = Flask(__name__)

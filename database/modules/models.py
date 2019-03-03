@@ -1,7 +1,7 @@
 from ext import db
 
 
-class StudentsModule(db.Model):
+class StudentsModel(db.Model):
     
     id_number = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String, nullable=False)
@@ -11,7 +11,7 @@ class StudentsModule(db.Model):
         db.session.commit()
 
 
-class CoursesModule(db.Model):
+class CoursesModel(db.Model):
     
     id_number = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String, nullable=False)
@@ -21,7 +21,7 @@ class CoursesModule(db.Model):
         db.session.commit()
 
 
-class EventsModule(db.Model):
+class EventsModel(db.Model):
    
     id_number = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String, nullable=False)
